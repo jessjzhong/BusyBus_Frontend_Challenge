@@ -129,13 +129,14 @@ body {
   /* float: right; */
   transform: rotate(300deg);
   position: relative;
-  /* top: -20px;
-  right: 35px; */
+  top: -30px;
+  left: 200px;
 }
 
-.time {
+.container > .time {
   /* float: right; */
   font-weight: 600;
+  left: 220px;
 }
 
 
