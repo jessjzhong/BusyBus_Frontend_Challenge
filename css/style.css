@@ -98,7 +98,7 @@ body {
   float: left;
   color: #FFF;
   font-size: 1.2em;
-  padding: 2.5% 2% 2% 2%;
+  padding: 3% 2% 2% 2%;
   text-align: center;
   /* margin: 3px; */
 }
@@ -111,37 +111,42 @@ body {
   float: left;
   color: #FFF;
   font-size: 1.2em;
-  padding: 2.5% 2% 2% 2%;
+  padding: 3% 2% 2% 2%;
   text-align: center;
 }
 
 .destination {
-  /* display: inline-block; */
-  font-size: 17px;
+  font-size: 18px;
   padding-top: 1%;
   padding-left: 25%;
 }
 
 .frequency {
-  display: inline-block;
+  /* float: right; */
   transform: rotate(300deg);
   position: relative;
-  top: -5px;
-
-}
-
-.arrival-time {
-  /* width: 100%; */
-  font-size: 0.8em;
-  /* padding-top: 1%; */
-  padding-left: 25%;
-  padding-bottom: 1%;
-  letter-spacing: 0.3px
+  top: -20px;
+  right: 40px;
 }
 
 .time {
-  display: inline-block;
+  /* float: right; */
   font-weight: 600;
+  margin-left: 10%;
+}
+
+.frequency, .time {
+  float: right;
+}
+
+.arrival-time {
+  width: 100%;
+  font-size: 0.8em;
+  padding-top: 1.5%;
+  padding-left: 25%;
+  padding-bottom: 1%;
+  letter-spacing: 0.3px
+  padding-top: 5%;
 }
 
 ul, li {
