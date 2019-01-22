@@ -1,0 +1,149 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 412px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #9B9B9B
+}
+
+.menu-bar {
+  background-color: #EEEEEE;
+  height: 60px;
+}
+
+.arrow-left {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 5% 20% 5% 5%;
+  color: #218E87;
+}
+
+.text {
+  display: inline-block;
+  color: #218E87;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.kebab-menu {
+  display: inline-block;
+  color: #218E87;
+  padding: 5% 5% 5% 20%;
+}
+
+.map {
+  display: relative;
+  /* width: 100%; */
+  height: 350px;
+}
+
+.zoom {
+  position: absolute;
+  top: 110px;
+  right: 530px;
+  margin: auto;
+}
+
+.departure-bar {
+  background-color: #EEEEEE;
+  height: 40px;
+}
+
+.text-refresh {
+  display: inline-block;
+  font-size: 1.1em;
+  color: #218E87;
+  padding: 2.5% 5% 2% 8%;
+}
+
+.refresh {
+  display: inline-block;
+  color: #218E87;
+  padding: 2.5% 2% 2% 52%;
+}
+
+.bus-stops {
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.bus-times {
+  background-color: #FFF;
+  padding: 1%;
+}
+
+.areas {
+  background-color: #AACBC9;
+  height: 30px;
+  text-transform: uppercase;
+  padding: 2% 0 2% 8%;
+}
+
+.location {
+  margin: 25px;
+}
+
+.bus-line {
+  background-color: #218E87;
+  border-radius: 10px;
+  width: 70px;
+  height: 38px;
+  float: left;
+  color: #FFF;
+  font-size: 1.2em;
+  padding: 2.5% 2% 2% 2%;
+  text-align: center;
+  /* margin: 3px; */
+}
+
+.bus-not-in-service {
+  background-color: #F3AE3C;
+  border-radius: 10px;
+  width: 70px;
+  height: 38px;
+  float: left;
+  color: #FFF;
+  font-size: 1.2em;
+  padding: 2.5% 2% 2% 2%;
+  text-align: center;
+}
+
+.destination {
+  /* display: inline-block; */
+  font-size: 17px;
+  padding-top: 1%;
+  padding-left: 25%;
+}
+
+.frequency {
+  display: inline-block;
+  transform: rotate(300deg);
+  position: relative;
+  top: -5px;
+
+}
+
+.arrival-time {
+  /* width: 100%; */
+  font-size: 0.8em;
+  /* padding-top: 1%; */
+  padding-left: 25%;
+  padding-bottom: 1%;
+  letter-spacing: 0.3px
+}
+
+.time {
+  display: inline-block;
+  font-weight: 600;
+}
+
+ul, li {
+  list-style-type: none;
+}
