@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BusyBus Line</title>
+  <title>BusyBus</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div>
+  <section>
+    <nav class="status-bar"><img src="images/status_bar.png" alt="Android Status Bar"/></nav>
     <nav class="menu-bar">
       <span class="menu-status">
         <span class="arrow-left"><i class="fas fa-arrow-left"></i></span>
@@ -17,87 +19,98 @@
         <span class="kebab-menu"><i class="fas fa-ellipsis-v"></i></span>
       </span>
     </nav>
-  </div>
+  </section>
   <section class="map">
     <span class="map-image"><img src="images/busybusmap.png" alt="Bus Map Image"/></span>
     <span class="zoom"><img src="images/location.png" alt="Location Icon"/></span>
   </section>
-  <div>
+  <section>
     <nav class="departure-bar">
       <span class="text-refresh">Departures</span>
       <span class="refresh"><i class="fas fa-redo"></i></span>
     </nav>
-    <section class="bus-stops">
-      <div class="bus-times">
-        <div class="areas">Eastbound</div>
-          <ul class="location">
-            <li class="bus-line">60</li>
-            <li class="destination">Randolph/Harbor Dr</li>
-              <span class="container"><span class="frequency"><img src="images/Signal.png" alt="Frequency Signal"/>
-              <span class="time">0 min</span></span>
-            <li class="arrival-time">and in 20, 40, 60 min</li>
-          </ul>
-          <ul class="location">
-            <li class="bus-line">124</li>
-            <li class="destination">Navy Pier</li>
-              <span class="container"><span class="frequency"><img src="images/Signal.png" alt="Frequency Signal"/>
-              <span class="time">1 min</span></span>
-            <li class="arrival-time">and in 11, 21, 31 min</li>
-          </ul>
-      </div>
-      <div class="bus-times">
-        <div class="areas">Northbound</div>
-          <ul class="location">
-            <li class="bus-line">151</li>
-            <li class="destination">Devon/Clark</li>
-              <span class="container"><span class="frequency"><img src="images/Signal.png" alt="Frequency Signal"/>
-              <span class="time">1 min</span></span>
-            <li class="arrival-time">and in 17, 33, 49 min</li>
-          </u>
-      </div>
-        <div class="bus-times">
-          <div class="areas">Southbound</div>
-            <ul class="location">
-              <li class="bus-line">J14</li>
-              <li class="destination">103rd/Stony Island</li>
-              <span class="container"><span class="frequency"><img src="images/Signal.png" alt="Frequency Signal"/>
-              <span class="time">3 min</span></span>
-              <li class="arrival-time">and in 18, 33, 48 min</li>
-            </ul>
-            <ul class="location">
-              <li class="bus-line">124</li>
-              <li class="destination">Navy Pier</li>
-              <span class="container"><span class="frequency"><img src="images/Signal.png" alt="Frequency Signal"/>
-              <span class="time">5 min</span></span>
-              <li class="arrival-time">and in 15, 25, 35 min</li>
-            </ul>
-        </div>
-          <div class="bus-times">
-            <div class="areas">Reroute</span></div>
-              <ul class="location">
-                <li class="bus-line">6x</li>
-                <li class="destination">Jackson Park Express</li>
-                <li class= "arrival-time">N/A</li>
-              </ul>
-          </div>
-            <div class="bus-times">
-              <div class="areas">Out of service</span></div>
-                <ul class="location">
-                  <li class="bus-not-in-service">4</li>
-                  <li class="destination">Cottage Grove</li>
-                  <li class="arrival-time">Resumes 12:10am</li>
-                </ul>
-                <ul class="location">
-                  <li class="bus-not-in-service">20</li>
-                  <li class="destination">Madison</li>
-                  <li class="arrival-time">Resumes 12:10am</li>
-                </ul>
-                <ul class="location">
-                  <li class="bus-not-in-service">157</li>
-                  <li class="destination">Streeterville/Taylor</li>
-                  <li class="arrival-time">Resumes 6:00am</li>
-                </ul>
-            </div>
-      </section>
-    </body>
+  </section>
+  <section class="bus-stops">
+    <section class="bus-times">
+      <div class="areas">Eastbound</div>
+      <ul class="location">
+        <li class="bus-line">60</li>
+        <li class="destination">Randolph/Harbor Dr</li>
+        <span class="frequency"><img src="images/Signal.png" alt="Frequency Signal" style= "position: relative;
+        top: -10px;
+        right: -6px;"/>
+        <span class="time">0 min</span></span>
+        <li class="arrival-time">and in <span class="time-frequency">20, 40, 60</span> min</li>
+      </ul>
+      <ul class="location">
+        <li class="bus-line">124</li>
+        <li class="destination">Navy Pier</li>
+        <span class="frequency"><img src="images/Signal.png" alt="Frequency Signal" style= "position: relative;
+        top: -10px;
+        right: -6px;"/>
+        <span class="time">1 min</span></span>
+        <li class="arrival-time">and in <span class="time-frequency">11, 21, 31</span> min</li>
+      </ul>
+    </section>
+    <section class="bus-times">
+      <div class="areas">Northbound</div>
+      <ul class="location">
+        <li class="bus-line">151</li>
+        <li class="destination">Devon/Clark</li>
+        <span class="frequency"><img src="images/Signal.png" alt="Frequency Signal" style= "position: relative;
+        top: -10px;
+        right: -6px;"/>
+        <span class="time">1 min</span></span>
+        <li class="arrival-time">and in <span class="time-frequency">17, 33, 49</span> min</li>
+      </u>
+    </section>
+    <section class="bus-times">
+      <div class="areas">Southbound</div>
+      <ul class="location">
+        <li class="bus-line">J14</li>
+        <li class="destination">103rd/Stony Island</li>
+        <span class="frequency"><img src="images/Signal.png" alt="Frequency Signal" style= "position: relative;
+        top: -10px;
+        right: -6px;"/>
+        <span class="time">3 min</span></span>
+        <li class="arrival-time">and in <span class="time-frequency">18, 33, 48</span> min</li>
+      </ul>
+      <ul class="location">
+        <li class="bus-line">124</li>
+        <li class="destination">Navy Pier</li>
+        <span class="frequency"><img src="images/Signal.png" alt="Frequency Signal" style= "position: relative;
+        top: -10px;
+        right: -6px;"/>
+        <span class="time">5 min</span></span>
+        <li class="arrival-time">and in <span class="time-frequency">15, 25, 35</span> min</li>
+      </ul>
+    </section>
+    <section class="bus-times">
+      <div class="areas">Reroute</div>
+      <ul class="location">
+        <li class="bus-line">6x</li>
+        <li class="destination">Jackson Park Express</li>
+        <li class= "arrival-time">N/A</li>
+      </ul>
+    </section>
+    <section class="bus-times">
+      <div class="areas">Out of service</span></div>
+      <ul class="location">
+        <li class="bus-not-in-service">4</li>
+        <li class="destination">Cottage Grove</li>
+        <li class="arrival-time">Resumes <span class="time-frequency">12:10am</span></li>
+      </ul>
+      <ul class="location">
+        <li class="bus-not-in-service">20</li>
+        <li class="destination">Madison</li>
+        <li class="arrival-time">Resumes <span class="time-frequency">12:10am</span></li>
+      </ul>
+      <ul class="location">
+        <li class="bus-not-in-service">157</li>
+        <li class="destination">Streeterville/Taylor</li>
+        <li class="arrival-time">Resumes <span class="time-frequency">6:00am</span></li>
+      </ul>
+    </section>
+  </section>
+</body>
 </html>
