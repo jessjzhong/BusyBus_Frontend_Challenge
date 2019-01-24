@@ -3,13 +3,19 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   width: 412px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #9B9B9B;
+}
+
+.status-bar {
+  position: relative;
+  width: 100%;
+  margin-bottom: -4px;
 }
 
 .menu-bar {
@@ -59,7 +65,8 @@ body {
   float: left;
   font-size: 1.1em;
   color: #218E87;
-  padding: 2% 5% 2% 8%;
+  padding: 2% 2% 2% 8%;
+  font-weight: bold;
 }
 
 .refresh {
@@ -92,7 +99,7 @@ body {
   margin: 25px;
 }
 
-.bus-line {
+.bus-line, .bus-not-in-service {
   background-color: #218E87;
   border-radius: 10px;
   width: 70px;
@@ -107,50 +114,39 @@ body {
 
 .bus-not-in-service {
   background-color: #F3AE3C;
-  border-radius: 10px;
-  width: 70px;
-  height: 38px;
-  float: left;
-  color: #FFF;
-  font-size: 1.2em;
-  padding: 3% 2% 2% 2%;
-  text-align: center;
 }
 
 .destination {
-  font-size: 18px;
+  font-size: 1.1em;
   padding-left: 14px;
   display: inline-block;
   width: auto;
-  padding-top: 2px;
+  padding-top: 5px;
   margin-right: 10px;
-}
-
-.container {
-  width: 100%;
-  margin-top: 5%;
 }
 
 .frequency {
   float: right;
   position: relative;
   width: auto;
-  bottom: -7px;
-  padding-bottom: 10px;
+  bottom: -10px;
 }
 
 .time {
   font-weight: 600;
-  bottom: -3px;
 }
 
 .arrival-time {
   width: 100%;
   font-size: 0.8em;
-  padding-top: 1.5%;
+  padding-top: 1%;
   padding-left: 25%;
   padding-bottom: 1%;
   letter-spacing: 0.3px;
+}
+
+.time-frequency {
+  font-weight: 900;
 }
 
 ul, li {
