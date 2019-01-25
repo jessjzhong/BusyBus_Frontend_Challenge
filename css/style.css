@@ -93,6 +93,7 @@ body {
   height: 30px;
   text-transform: uppercase;
   padding: 2% 0 2% 8%;
+  font-weight: 500;
 }
 
 .location {
@@ -123,6 +124,7 @@ body {
   width: auto;
   padding-top: 5px;
   margin-right: 10px;
+  font-weight: 500;
 }
 
 .frequency {
